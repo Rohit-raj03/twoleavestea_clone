@@ -2,6 +2,13 @@
 
 :root {
   --blue: #2a2857;
+  --color-primary: #2a2857;
+  --color-icon: #ffb500;
+  --color-icon-hover: #c0dbff;
+  --bg-colour: #9f6429;
+  --light-bg-colour: rgb(255, 203, 150);
+  --white-bg-colour: #fbf9eb;
+  --organe-bg-colour: #f26412;
 }
 * {
   padding: 0;
@@ -67,12 +74,31 @@ header {
 }
 .icon i {
   color: #474747;
+  position: relative;
 }
 
 i img {
+  height: 30px;
+}
+.card_icon {
   height: 40px;
 }
-
+i span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #ffb701;
+  height: 17px;
+  width: 17px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 nav {
   display: flex;
   align-items: center;
@@ -625,6 +651,324 @@ button.learn_more:hover {
   background-color: transparent;
   color: #fff;
 }
+section7 {
+  min-height: 200vh;
+  width: 100%;
+  background-color: #9f6429;
+}
+#section7 h1 {
+}
+.barista-blend {
+  background-color: var(--bg-colour);
+  padding: 1.5rem 1rem 2.5rem;
+  min-height: 46rem;
+  position: relative;
+}
+.barista-blen-content {
+  width: 100%;
+  margin: 10rem 0;
+  text-align: center;
+}
+.barista-blen-content h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "roboto";
+  font-weight: 900;
+  font-size: clamp(3rem, 5vw, 5rem);
+  padding-top: 8rem;
+  position: relative;
+}
+.design-for-ease {
+  margin-top: 10px;
+}
+.design-for-ease img {
+  width: 150px;
+  position: absolute;
+  z-index: +99;
+  right: 10%;
+  top: -5%;
+}
+.barista-blen-content p {
+  font-family: "roboto-font";
+  font-size: 1.25rem;
+  color: var(--white-bg-colour);
+  margin-top: 1rem;
+}
+
+.barista-panel {
+  width: min(100%, 1820px);
+  min-height: 35rem;
+  background: var(--light-bg-colour);
+  border: 1px solid #1f1a18;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(380px, 0.9fr);
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.barista-visuals {
+  position: relative;
+  min-height: 32rem;
+}
+
+.barista-pack {
+  position: absolute;
+  left: 8%;
+  top: -6%;
+  width: 100%;
+  z-index: 1;
+}
+
+.barista-cup {
+  position: absolute;
+  z-index: 2;
+  bottom: 15%;
+}
+.barista-cup img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.design-for-ease img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.barista-copy {
+  max-width: 36rem;
+  justify-self: start;
+}
+
+.barista-tag {
+  display: inline-block;
+  font-family: "midnight-font";
+  font-size: 3rem;
+  line-height: 1;
+  color: #111;
+  background: #f4aa54;
+  border: 1px solid #1f1a18;
+  border-radius: 8px;
+  padding: 0.15rem 0.55rem;
+  transform: rotate(-2deg);
+  margin-bottom: 1.5rem;
+}
+
+.barista-copy h1 {
+  font-family: "reckless-font";
+  font-size: clamp(4rem, 5vw, 6.2rem);
+  line-height: 0.9;
+  font-weight: 100;
+  color: #1f1a18;
+  margin-bottom: 1.4rem;
+}
+
+.barista-copy p {
+  max-width: 32rem;
+  font-family: "figtree-font";
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #1f1a18;
+  margin-bottom: 2rem;
+}
+
+.barista-btn {
+  padding: 1rem 3.5rem;
+  font-size: 1rem;
+  font-family: "figtree-font";
+  background-color: #fffefb;
+  color: #1f1a18;
+  border: 1px solid #1f1a18;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.barista-btn:hover {
+  background: var(--color-primary);
+  color: #fffefb;
+}
+
+.barista-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(300%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #1f1a18;
+  background: #fffefb;
+  color: #1f1a18;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  z-index: 5;
+}
+
+.barista-arrow-left {
+  left: 2rem;
+}
+
+.barista-arrow-right {
+  right: 2rem;
+}
+
+.footer-section {
+  background: #cfe7ff; /* soft blue from screenshot */
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.footer-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 2rem;
+  align-items: center;
+}
+.footer-left h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: "roboto";
+  margin-bottom: 1rem;
+}
+.footer-lead {
+  font-family: "bitter";
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: #334155;
+  margin-bottom: 1.75rem;
+  max-width: 600px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-form input[type="email"] {
+  min-width: 300px;
+  /* width: 50%; */
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid #1f1a18;
+  font-size: 1rem;
+}
+.newsletter-btn {
+  padding: 0.85rem 1.25rem;
+  border-radius: 10rem;
+  border: 1px solid #1f1a18;
+  background: #fff;
+  cursor: pointer;
+}
+.footer-right {
+  text-align: center;
+  align-self: end;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #1f1a18;
+  color: #111;
+  background: #cfe7ff;
+  text-decoration: none;
+}
+.social:hover {
+  background-color: #fff;
+}
+.social i {
+  font-size: 1.1rem;
+}
+.footer-logo {
+  height: 8vw;
+  margin-top: 4rem;
+  text-align: center;
+}
+.f-logo {
+  height: 100%;
+  width: 100%;
+}
+.footer-extended {
+  width: 100%;
+}
+.footer-extended img {
+  margin-top: 10rem;
+  width: 100%;
+  height: 300px;
+  background-size: 100dvh;
+  object-fit: cover;
+  background-position: center;
+}
+footer p {
+  font-family: "roboto-font";
+  text-align: center;
+  color: #201c1a;
+}
+.footer-sitemap {
+  background-color: var(--color-primary);
+  border-radius: 15px;
+  margin-top: 3rem;
+}
+
+.sitemap-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 2.5rem;
+  padding: 2rem;
+  display: warp;
+}
+
+.sitemap-col h3 {
+  font-family: "bitter";
+  color: #fbf9eb;
+  font-size: 1.35rem;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+}
+
+.sitemap-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sitemap-col li {
+  font-family: "roboto";
+  color: rgba(251, 249, 235, 0.7);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  position: relative;
+  width: fit-content;
+}
+.sitemap-col li::after {
+  content: " ";
+  height: 1px;
+  width: 0%;
+  margin: -4px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all ease 0.3s;
+  color: #fff;
+}
+.sitemap-col li:hover::after {
+  width: 100%;
+}
+.sitemap-col li:hover {
+  cursor: pointer;
+  color: #fff;
+}
 @media (max-width: 1050px) {
   .part1,
   .part3 {
@@ -694,5 +1038,41 @@ button.learn_more:hover {
   }
   .right button.learn_more {
     margin: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .newsletter-form {
+    min-width: 100%;
+  }
+  .newsletter-form input[type="email"] {
+    min-width: 100%;
+  }
+  .barista-panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    position: relative;
+  }
+  .barista-cup {
+    object-fit: cover;
+    position: absolute;
+    text-align: center;
+  }
+
+  .barista-cup {
+    width: 75vmax;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .barista-copy {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
